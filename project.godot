@@ -1,0 +1,31 @@
+config_version=5
+
+[application]
+
+config/name="SHIFT"
+config/description="A one-button game: hold Shift to take the high gear, let go to drop to low. Gaps need speed. Gates punish it."
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[gui]
+
+theme/custom="res://theme/dread_theme.tres"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.05, 0.05, 0.06, 1)
+
+[input]
+
+shift_gear={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":4194325), Object(InputEventKey,"physical_keycode":4194326), Object(InputEventKey,"physical_keycode":32), Object(InputEventKey,"physical_keycode":74)]}
+restart={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":82)]}
+pause={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":4194305)]}

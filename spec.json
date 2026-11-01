@@ -1,0 +1,21 @@
+{
+ "title": "SHIFT - A One-Button Game About Gears",
+ "slug": "shift-one-button",
+ "short": "Shift is the only control. Hold it for high gear: fast, committed, clears wide gaps. Let go for low gear: slow, gripping, fits through the gates. Gaps need speed. Gates punish it.",
+ "version": 1,
+ "zip": "outputs/shift-v1.zip",
+ "cover": "outputs/shift/cover-630x500.png",
+ "tags": [
+  "godot",
+  "jam",
+  "one-button",
+  "game-off",
+  "pixel-art",
+  "2d",
+  "arcade",
+  "rhythm",
+  "gameoff2026",
+  "sourcecode"
+ ],
+ "description": "<h2>The theme is SHIFT. So Shift is the only button.</h2>\n<p>A <strong>Game Off 2026</strong> entry on the theme <em>SHIFT</em>.</p>\n<h2>Two gears, and they disagree</h2>\n<ul>\n<li><strong>HOLD SHIFT - high gear.</strong> Fast, carries momentum, clears wide gaps. It also will not stop in time.</li>\n<li><strong>LET GO - low gear.</strong> Slow, grips the ground, fits through narrow gates. It also will never make the jump.</li>\n</ul>\n<p>You never steer. The course arrives. <strong>Gaps need speed. Gates punish it.</strong> Every decision in a run is hold or let go, several hundred times, and the two demands are always in the way of each other. That is the whole game.</p>\n<h2>Controls</h2>\n<ul>\n<li><strong>SHIFT</strong> (or space, or J) - hold for high gear, release for low</li>\n<li><strong>ENTER</strong> - start, and retry</li>\n<li><strong>ESC</strong> - pause &nbsp; <strong>R</strong> - restart</li>\n</ul>\n<p>That is the entire interface. There is no steering, no jump, no attack.</p>\n<h2>Why it is one button</h2>\n<p>Because the theme offered three readings and this is the strictest one. If the only thing you can do is shift, then the game is entirely about <em>when</em> - which is what shifting gears actually is. A gearbox does not give you new abilities; it changes what your existing speed is good for.</p>\n<h2>Tested, and what the tests assert</h2>\n<p>29 assertions run headless. The interesting ones are design assertions rather than plumbing:</p>\n<ul>\n<li>low cruise really is slower than high cruise, so the button does something</li>\n<li>high gear takes several frames to build, so committing costs time</li>\n<li>braking from high gear does not stop instantly, so commitment costs something else too</li>\n<li>a gap cannot be cleared at low cruise and can be at high - and a gate is the exact inverse</li>\n<li>the design is fair: every obstacle is passable in some gear, none is passable in all of them</li>\n<li>the course is valid: obstacles inside bounds and spaced so a player can recover</li>\n<li>the same seed produces the same course, so a bug is reproducible</li>\n</ul>\n<p>The scene boots headless with no script errors. A web build is attached, plus a Windows build.</p>\n<h2>Where the assets came from</h2>\n<p>Built on the Gen XIA toolkit:</p>\n<ul>\n<li><a href=\"https://gen-xia.itch.io/dread-horror-hud-ui-kit\">Dread - Horror HUD &amp; UI Kit</a> - the cockpit panels and palette</li>\n<li><a href=\"https://gen-xia.itch.io/dread-horror-survival-sfx\">Dread - Horror &amp; Survival SFX</a> - the sounds</li>\n<li><a href=\"https://gen-xia.itch.io/rpg-character-monster-library\">Gen XIA Character Library</a> - sprite reference</li>\n</ul>\n<p>Source is public with credits in the README, as the jam rules require.</p>\n<h2>AI disclosure</h2>\n<p>AI-assisted. Design, code and every final file are decided by hand; generative tooling was part of the pipeline.</p>"
+}

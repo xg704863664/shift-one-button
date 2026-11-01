@@ -1,0 +1,103 @@
+[gd_resource type="Theme" load_steps=19 format=3]
+
+[ext_resource type="Texture2D" path="res://ui/1x/panel_main.png" id="1_panel_main"]
+[ext_resource type="Texture2D" path="res://ui/1x/panel_tooltip.png" id="2_panel_tooltip"]
+[ext_resource type="Texture2D" path="res://ui/1x/panel_dialogue.png" id="3_panel_dialogue"]
+[ext_resource type="Texture2D" path="res://ui/1x/button_normal.png" id="4_button_normal"]
+[ext_resource type="Texture2D" path="res://ui/1x/button_hover.png" id="5_button_hover"]
+[ext_resource type="Texture2D" path="res://ui/1x/button_pressed.png" id="6_button_pressed"]
+[ext_resource type="Texture2D" path="res://ui/1x/button_disabled.png" id="7_button_disabled"]
+[ext_resource type="Texture2D" path="res://ui/1x/bar_health_100.png" id="8_bar_health_100"]
+[ext_resource type="Texture2D" path="res://ui/1x/slot_normal.png" id="9_slot_normal"]
+[ext_resource type="Texture2D" path="res://ui/1x/slot_selected.png" id="10_slot_selected"]
+[sub_resource type="StyleBoxTexture" id="sb_panel"]
+texture = ExtResource("1_panel_main")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="sb_tip"]
+texture = ExtResource("2_panel_tooltip")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 6.0
+content_margin_top = 3.0
+content_margin_right = 6.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="sb_btn_normal"]
+texture = ExtResource("4_button_normal")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="sb_btn_hover"]
+texture = ExtResource("5_button_hover")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="sb_btn_pressed"]
+texture = ExtResource("6_button_pressed")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="sb_btn_disabled"]
+texture = ExtResource("7_button_disabled")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+content_margin_left = 8.0
+content_margin_top = 3.0
+content_margin_right = 8.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id="sb_bar_bg"]
+
+[sub_resource type="StyleBoxTexture" id="sb_bar_fill"]
+texture = ExtResource("8_bar_health_100")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[resource]
+PanelContainer/styles/panel = SubResource("sb_panel")
+PopupPanel/styles/panel = SubResource("sb_tip")
+Panel/styles/panel = SubResource("sb_panel")
+Button/colors/font_color = Color(0.808, 0.792, 0.761, 1)
+Button/colors/font_hover_color = Color(0.902, 0.894, 0.878, 1)
+Button/colors/font_pressed_color = Color(0.769, 0.243, 0.212, 1)
+Button/styles/normal = SubResource("sb_btn_normal")
+Button/styles/hover = SubResource("sb_btn_hover")
+Button/styles/pressed = SubResource("sb_btn_pressed")
+Button/styles/disabled = SubResource("sb_btn_disabled")
+Label/colors/font_color = Color(0.808, 0.792, 0.761, 1)
+RichTextLabel/colors/default_color = Color(0.808, 0.792, 0.761, 1)
+ProgressBar/styles/background = SubResource("sb_bar_bg")
+ProgressBar/styles/fill = SubResource("sb_bar_fill")
+ProgressBar/colors/font_color = Color(0.573, 0.557, 0.541, 1)

@@ -1,0 +1,11 @@
+# Godot cache
+.godot/
+*.import
+
+# build output
+dist/
+
+# local test artefacts
+_test-result.txt
+_theme-result.txt
+shots/
